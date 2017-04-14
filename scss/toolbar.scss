@@ -1,0 +1,76 @@
+//
+// toolbars.scss
+// --------------------------------------------------
+$toolbar-height: 50px;
+
+.toolbar {
+  display:float;
+  vertical-align: middle;
+  align-items: center;
+  min-height: $toolbar-height;
+  max-height: $toolbar-height;
+  line-height: $toolbar-height;
+  background-color: $light;
+  color: $dark;
+  @include clearfix;
+}
+
+.toolbar-header {
+  border-bottom: 1px solid $border-color;
+  .title {
+    margin-top: 1px;
+  }
+}
+
+.toolbar-footer {
+  border-top: 1px solid $border-color;
+  background-color: $light;
+  -webkit-app-region: drag;
+}
+
+// Simple centered title to go in the toolbar
+.title {
+  margin: 0;
+  font-size: 14px;
+  line-height: $toolbar-height;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  color: $dark;
+  cursor: default;
+}
+
+// Borderless toolbar for the clean look
+.toolbar-borderless {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+// Buttons in toolbars
+.toolbar-actions {
+  vertical-align: middle;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  -webkit-app-region: drag;
+  // @include clearfix;
+
+  > .btn,
+  > .btn-group {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  > .icon {
+      width: 33px; // Prevents a one pixel cutoff
+      height: 32px;
+      float: left;
+      color: $dark;
+      margin-top: -3px;
+      margin-right: 7px;
+      font-size: 26px;
+      text-align: center;
+    }
+}

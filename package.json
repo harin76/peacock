@@ -1,0 +1,37 @@
+{
+  "name": "peacock",
+  "version": "0.1.0",
+  "description": "A UI framework to build admin dashboards and desktop style applications, heavily inspired by photon toolkit Edit",
+  "main": "scss/main.scss",
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css",
+    "clean-css": "./bin/clean-css",
+    "build-autoprefix": "postcss --use autoprefixer --output dist/css/main.css dist/css/main.css",
+    "test": "browser-sync start --server --files \"dist/css/*.css\" --index \"test/index.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harin76/peacock.git"
+  },
+  "keywords": [
+    "UI",
+    "framework",
+    "admin",
+    "html5",
+    "css"
+  ],
+  "author": "Hari Narasimhan <harin76@gmail.com> (https://github.com/hari-narasimhan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harin76/peacock/issues"
+  },
+  "homepage": "https://github.com/harin76/peacock#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "node-sass": "4.5.2",
+    "nodemon": "1.11.0",
+    "postcss-cli": "^2.5.1",
+    "rimraf": "^2.6.1"
+  }
+}

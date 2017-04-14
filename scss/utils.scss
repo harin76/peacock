@@ -1,0 +1,35 @@
+//
+// utils.scss
+
+// Utility classes
+.selectable-text {
+  cursor: text;
+  -webkit-user-select: text;
+}
+
+// Text alignment
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+// Floats
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+// Clearfix
+.clearfix {
+  @include clearfix();
+}

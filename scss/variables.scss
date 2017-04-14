@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////////
+// 1. Basic Colors
+$snow: #FAFBFC;
+$blue-charcoal: #24292e;
+
+////////////////////////////////////////////////////////////////////////////////
+// 2. Primary colors
+
+$primary: #0F7DC2 !default;
+$info:  #274690 !default;
+$success: #0FC27D !default;
+$warning: #FCD62C !default;
+$danger: #C20F7D !default;
+
+$light: $snow !default;
+$dark: $blue-charcoal !default;
+
+////////////////////////////////////////////////////////////////////////////////
+// 3. Element Colors
+$body-background : $snow !default;
+$chrome-color : $snow !default;
+$border-color: #D6D6D6 !default;
+
+////////////////////////////////////////////////////////////////////////////////
+// 4. Typography
+$font-path: '../fonts/' !default;
+// Try to use the system's font on whatever platform the user is on.
+$font-family-default: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", "Roboto", sans-serif !default;
+$font-size-default: 13px !default;
+$font-weight: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-light: 300 !default;
+$line-height-default: 1.6 !default;
