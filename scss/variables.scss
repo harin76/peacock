@@ -15,12 +15,15 @@ $danger: #C20F7D !default;
 $light: $snow !default;
 $dark: $blue-charcoal !default;
 
+$positive-color: $success !default;
+$negative-color: $danger !default;
+$warning-color: $warning !default;
 ////////////////////////////////////////////////////////////////////////////////
 // 3. Element Colors
 $body-background : $snow !default;
 $chrome-color : $snow !default;
 $border-color: #D6D6D6 !default;
-
+$active-color: $info !default;
 ////////////////////////////////////////////////////////////////////////////////
 // 4. Typography
 $font-path: '../fonts/' !default;
@@ -31,3 +34,17 @@ $font-weight: 500 !default;
 $font-weight-bold: 700 !default;
 $font-weight-light: 300 !default;
 $line-height-default: 1.6 !default;
+
+////////////////////////////////////////////////////////////////////////////////
+// 5. Focus colors and Border Radius
+// Focus and active colors
+$active-color: #116cd6;
+$focus-input-color: lighten($primary, 10%)  !default;
+
+$default-border-radius: 4px;
+////////////////////////////////////////////////////////////////////////////////
+// 6. padding
+$padding: 10px;
+$padding-mini: 3px;
+$padding-less: 5px;
+$padding-more: 20px;
